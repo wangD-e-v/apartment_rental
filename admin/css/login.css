@@ -1,0 +1,82 @@
+/* Login Page Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box; /* Ensures padding is included in the element's width and height */
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #333;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 10px 10px 40px; /* Extra padding on the left for the icon */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensures padding is included in the element's width and height */
+}
+
+.input-box input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    box-sizing: border-box; /* Ensures padding is included in the element's width and height */
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        padding: 15px;
+    }
+
+    .login-box h2 {
+        font-size: 24px;
+    }
+
+    .input-box input {
+        padding: 10px 10px 10px 35px; /* Slightly adjust padding for smaller screens */
+    }
+}
